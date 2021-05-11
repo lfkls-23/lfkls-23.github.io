@@ -6,7 +6,7 @@
   <link href="https://lfkls-23.github.io/atom.xml" rel="self"/>
   
   <link href="https://lfkls-23.github.io/"/>
-  <updated>2021-05-11T10:23:23.790Z</updated>
+  <updated>2021-05-11T12:44:32.852Z</updated>
   <id>https://lfkls-23.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lfkls-23.github.io/2021/05/10/diary/"/>
     <id>https://lfkls-23.github.io/2021/05/10/diary/</id>
     <published>2021-05-10T12:34:29.479Z</published>
-    <updated>2021-05-11T10:23:23.790Z</updated>
+    <updated>2021-05-11T12:44:32.852Z</updated>
     
     
       
@@ -34,6 +34,14 @@
     
     
     
+    <category term="research" scheme="https://lfkls-23.github.io/categories/research/"/>
+    
+    <category term="project" scheme="https://lfkls-23.github.io/categories/research/project/"/>
+    
+    
+    <category term="cesium" scheme="https://lfkls-23.github.io/tags/cesium/"/>
+    
+    <category term="可视化" scheme="https://lfkls-23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
@@ -42,7 +50,7 @@
     <link href="https://lfkls-23.github.io/2021/05/09/hello-world/"/>
     <id>https://lfkls-23.github.io/2021/05/09/hello-world/</id>
     <published>2021-05-09T08:22:45.149Z</published>
-    <updated>2021-05-09T08:22:45.149Z</updated>
+    <updated>2021-05-11T12:43:26.503Z</updated>
     
     
       
@@ -55,6 +63,10 @@
     
     
     
+    <category term="init" scheme="https://lfkls-23.github.io/categories/init/"/>
+    
+    
+    <category term="init" scheme="https://lfkls-23.github.io/tags/init/"/>
     
   </entry>
   
