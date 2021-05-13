@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo lfkls-23">
+    <meta name="keywords" content="Sort, Hexo lfkls-23">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo lfkls-23</title>
+    <title>Sort | Hexo lfkls-23</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Sort</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/algorithm/">
+                                <span class="chip bg-color">algorithm</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/algorithm/" class="post-category">
+                                algorithm
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -468,102 +481,102 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><hr>
-<h2 id="冒泡排序O-n-2"><a href="#冒泡排序O-n-2" class="headerlink" title="冒泡排序O(n^2)"></a>冒泡排序O(n^2)</h2><pre><code>for(let i=0;i&lt;n.length;i++){
-        for(let j=i;j&lt;n.length;j++){
-            if(n[i]&gt;n[j]){
-                let t=n[i]
-                n[i]=n[j]
-                n[j]=t
-            }
-        }
-    }
-    return n
+<h2 id="冒泡排序O-n-2"><a href="#冒泡排序O-n-2" class="headerlink" title="冒泡排序O(n^2)"></a>冒泡排序O(n^2)</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> j<span class="token operator">=</span>i<span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">></span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">let</span> t<span class="token operator">=</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+                n<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>t
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> n
 </code></pre>
 <h3 id="原地，稳定"><a href="#原地，稳定" class="headerlink" title="原地，稳定"></a>原地，稳定</h3><hr>
-<h2 id="插入排序O-n-2"><a href="#插入排序O-n-2" class="headerlink" title="插入排序O(n^2)"></a>插入排序O(n^2)</h2><pre><code>for(let i=1;i&lt;n.length;i++){
-        let v=n[i]
-        for(var j=i-1;j&gt;=0;j--){
-            if(n[j]&lt;=v){
-                break
-            }else{
-                n[j+1]=n[j]
-            }
-        }
-        n[j+1]=v
-    }
-    return n
+<h2 id="插入排序O-n-2"><a href="#插入排序O-n-2" class="headerlink" title="插入排序O(n^2)"></a>插入排序O(n^2)</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> v<span class="token operator">=</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j<span class="token operator">=</span>i<span class="token number">-1</span><span class="token punctuation">;</span>j<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;=</span>v<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">break</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                n<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        n<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>v
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> n
 </code></pre>
 <h3 id="原地，稳定-1"><a href="#原地，稳定-1" class="headerlink" title="原地，稳定"></a>原地，稳定</h3><hr>
-<h2 id="选择排序O-n-2"><a href="#选择排序O-n-2" class="headerlink" title="选择排序O(n^2)"></a>选择排序O(n^2)</h2><pre><code>for(let i=0;i&lt;n.length;i++){
-        let [m,mi]=[n[i],i]
-        for(var j=i;j&lt;n.length;j++){
-            if(n[j]&lt;m){
-                m=n[j]
-                mi=j
-            }
-        }
-        let t=n[i]
-        n[i]=n[mi]
-        n[mi]=t
-    }
-    return n
+<h2 id="选择排序O-n-2"><a href="#选择排序O-n-2" class="headerlink" title="选择排序O(n^2)"></a>选择排序O(n^2)</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> <span class="token punctuation">[</span>m<span class="token punctuation">,</span>mi<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">[</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j<span class="token operator">=</span>i<span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>m<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                m<span class="token operator">=</span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+                mi<span class="token operator">=</span>j
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">let</span> t<span class="token operator">=</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>n<span class="token punctuation">[</span>mi<span class="token punctuation">]</span>
+        n<span class="token punctuation">[</span>mi<span class="token punctuation">]</span><span class="token operator">=</span>t
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> n
 </code></pre>
 <h3 id="原地，不稳定"><a href="#原地，不稳定" class="headerlink" title="原地，不稳定"></a>原地，不稳定</h3><hr>
-<h2 id="归并排序O-nlog-n"><a href="#归并排序O-nlog-n" class="headerlink" title="归并排序O(nlog n)"></a>归并排序O(nlog n)</h2><pre><code>function merge(n){
-    if(n.length&lt;2){
-        return n
-    }
-    return merge1(
-        merge(n.slice(0,Math.floor(n.length/2))),
-        merge(n.slice(Math.floor(n.length/2),n.length))
-    )
-}
+<h2 id="归并排序O-nlog-n"><a href="#归并排序O-nlog-n" class="headerlink" title="归并排序O(nlog n)"></a>归并排序O(nlog n)</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">merge</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>length<span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> n
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token function">merge1</span><span class="token punctuation">(</span>
+        <span class="token function">merge</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>length<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">merge</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>length<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>n<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
 
-function merge1(n1,n2){
-    let start=0
-    n2.map(n=&gt;{
-        for(var i=start;i&lt;n1.length;i++){
-            if(n1[i]&gt;n){
-                start=i
-                break
-            }
-        }
-        n1.splice(i,0,n)
-    })
-    return n1
-}
+<span class="token keyword">function</span> <span class="token function">merge1</span><span class="token punctuation">(</span>n1<span class="token punctuation">,</span>n2<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> start<span class="token operator">=</span><span class="token number">0</span>
+    n2<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>n<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span>start<span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n1<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>n1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">></span>n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                start<span class="token operator">=</span>i
+                <span class="token keyword">break</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        n1<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> n1
+<span class="token punctuation">}</span>
 </code></pre>
 <h3 id="非原地，稳定"><a href="#非原地，稳定" class="headerlink" title="非原地，稳定"></a>非原地，稳定</h3><hr>
-<h2 id="快速排序O-nlog-n"><a href="#快速排序O-nlog-n" class="headerlink" title="快速排序O(nlog n)"></a>快速排序O(nlog n)</h2><pre><code>function fast(n){
-    return fast1(n,0,n.length-1)
-}
+<h2 id="快速排序O-nlog-n"><a href="#快速排序O-nlog-n" class="headerlink" title="快速排序O(nlog n)"></a>快速排序O(nlog n)</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">fast</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">fast1</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>n<span class="token punctuation">.</span>length<span class="token number">-1</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
 
-function fast1(n,min,max){
-    if(max-min&lt;1){
-        return n
-    }
-    let p=fast2(n,min,max)
-    fast1(n,min,p-1)
-    fast1(n,p+1,max)
-    return n
-}
+<span class="token keyword">function</span> <span class="token function">fast1</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>min<span class="token punctuation">,</span>max<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>max<span class="token operator">-</span>min<span class="token operator">&lt;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> n
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> p<span class="token operator">=</span><span class="token function">fast2</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>min<span class="token punctuation">,</span>max<span class="token punctuation">)</span>
+    <span class="token function">fast1</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>min<span class="token punctuation">,</span>p<span class="token number">-1</span><span class="token punctuation">)</span>
+    <span class="token function">fast1</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>max<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> n
+<span class="token punctuation">}</span>
 
-function fast2(n,min,max){
-    let p=n[max]
-    let i=min
-    for(let j=i;j&lt;max;j++){
-        if(p&gt;n[j]){
-            let t=n[i]
-            n[i]=n[j]
-            n[j]=t
-            i++
-        }
-    }
-    let t=n[i]
-    n[i]=n[max]
-    n[max]=t
-    return i
-}
+<span class="token keyword">function</span> <span class="token function">fast2</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>min<span class="token punctuation">,</span>max<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> p<span class="token operator">=</span>n<span class="token punctuation">[</span>max<span class="token punctuation">]</span>
+    <span class="token keyword">let</span> i<span class="token operator">=</span>min
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> j<span class="token operator">=</span>i<span class="token punctuation">;</span>j<span class="token operator">&lt;</span>max<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>p<span class="token operator">></span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> t<span class="token operator">=</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>n<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+            n<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>t
+            i<span class="token operator">++</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> t<span class="token operator">=</span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>n<span class="token punctuation">[</span>max<span class="token punctuation">]</span>
+    n<span class="token punctuation">[</span>max<span class="token punctuation">]</span><span class="token operator">=</span>t
+    <span class="token keyword">return</span> i
+<span class="token punctuation">}</span>
 </code></pre>
 <h3 id="原地，不稳定-1"><a href="#原地，不稳定-1" class="headerlink" title="原地，不稳定"></a>原地，不稳定</h3><hr>
 <h2 id="线性排序（复杂度为O-n-）"><a href="#线性排序（复杂度为O-n-）" class="headerlink" title="线性排序（复杂度为O(n)）"></a>线性排序（复杂度为O(n)）</h2><ul>
@@ -634,7 +647,11 @@ function fast2(n,min,max){
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/algorithm/">
+                                    <span class="chip bg-color">algorithm</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1070,18 +1087,17 @@ function fast2(n,min,max){
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/05/13/sort/">
+                <a href="/2021/05/13/search/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Search">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Search</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1091,18 +1107,29 @@ function fast2(n,min,max){
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            lfkls-23
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/algorithm/" class="post-category">
+                                    algorithm
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/algorithm/">
+                        <span class="chip bg-color">algorithm</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1176,8 +1203,6 @@ function fast2(n,min,max){
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1185,8 +1210,6 @@ function fast2(n,min,max){
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
