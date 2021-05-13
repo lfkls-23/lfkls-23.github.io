@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="2021/05/13/sort/"/>
+      <url>2021/05/13/sort/</url>
+      
+        <content type="html"><![CDATA[<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><hr><h2 id="冒泡排序O-n-2"><a href="#冒泡排序O-n-2" class="headerlink" title="冒泡排序O(n^2)"></a>冒泡排序O(n^2)</h2><pre><code>for(let i=0;i&lt;n.length;i++){        for(let j=i;j&lt;n.length;j++){            if(n[i]&gt;n[j]){                let t=n[i]                n[i]=n[j]                n[j]=t            }        }    }    return n</code></pre><h3 id="原地，稳定"><a href="#原地，稳定" class="headerlink" title="原地，稳定"></a>原地，稳定</h3><hr><h2 id="插入排序O-n-2"><a href="#插入排序O-n-2" class="headerlink" title="插入排序O(n^2)"></a>插入排序O(n^2)</h2><pre><code>for(let i=1;i&lt;n.length;i++){        let v=n[i]        for(var j=i-1;j&gt;=0;j--){            if(n[j]&lt;=v){                break            }else{                n[j+1]=n[j]            }        }        n[j+1]=v    }    return n</code></pre><h3 id="原地，稳定-1"><a href="#原地，稳定-1" class="headerlink" title="原地，稳定"></a>原地，稳定</h3><hr><h2 id="选择排序O-n-2"><a href="#选择排序O-n-2" class="headerlink" title="选择排序O(n^2)"></a>选择排序O(n^2)</h2><pre><code>for(let i=0;i&lt;n.length;i++){        let [m,mi]=[n[i],i]        for(var j=i;j&lt;n.length;j++){            if(n[j]&lt;m){                m=n[j]                mi=j            }        }        let t=n[i]        n[i]=n[mi]        n[mi]=t    }    return n</code></pre><h3 id="原地，不稳定"><a href="#原地，不稳定" class="headerlink" title="原地，不稳定"></a>原地，不稳定</h3><hr><h2 id="归并排序O-nlog-n"><a href="#归并排序O-nlog-n" class="headerlink" title="归并排序O(nlog n)"></a>归并排序O(nlog n)</h2><pre><code>function merge(n){    if(n.length&lt;2){        return n    }    return merge1(        merge(n.slice(0,Math.floor(n.length/2))),        merge(n.slice(Math.floor(n.length/2),n.length))    )}function merge1(n1,n2){    let start=0    n2.map(n=&gt;{        for(var i=start;i&lt;n1.length;i++){            if(n1[i]&gt;n){                start=i                break            }        }        n1.splice(i,0,n)    })    return n1}</code></pre><h3 id="非原地，稳定"><a href="#非原地，稳定" class="headerlink" title="非原地，稳定"></a>非原地，稳定</h3><hr><h2 id="快速排序O-nlog-n"><a href="#快速排序O-nlog-n" class="headerlink" title="快速排序O(nlog n)"></a>快速排序O(nlog n)</h2><pre><code>function fast(n){    return fast1(n,0,n.length-1)}function fast1(n,min,max){    if(max-min&lt;1){        return n    }    let p=fast2(n,min,max)    fast1(n,min,p-1)    fast1(n,p+1,max)    return n}function fast2(n,min,max){    let p=n[max]    let i=min    for(let j=i;j&lt;max;j++){        if(p&gt;n[j]){            let t=n[i]            n[i]=n[j]            n[j]=t            i++        }    }    let t=n[i]    n[i]=n[max]    n[max]=t    return i}</code></pre><h3 id="原地，不稳定-1"><a href="#原地，不稳定-1" class="headerlink" title="原地，不稳定"></a>原地，不稳定</h3><hr><h2 id="线性排序（复杂度为O-n-）"><a href="#线性排序（复杂度为O-n-）" class="headerlink" title="线性排序（复杂度为O(n)）"></a>线性排序（复杂度为O(n)）</h2><ul><li>桶排序（不稳定）</li><li>计数排序</li><li>基数排序</li></ul><h3 id="适用场景有限"><a href="#适用场景有限" class="headerlink" title="适用场景有限"></a>适用场景有限</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Diary</title>
       <link href="2021/05/10/diary/"/>
       <url>2021/05/10/diary/</url>
