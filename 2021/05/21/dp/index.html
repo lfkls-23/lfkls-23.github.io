@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="keywords" content="Bintree, Hexo lfkls-23">
+        <meta name="keywords" content="DP, Hexo lfkls-23">
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
 
 
             <title>
-                Bintree | Hexo lfkls-23
+                DP | Hexo lfkls-23
             </title>
             <link rel="icon" type="image/png" href="/favicon.png">
 
@@ -327,12 +327,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Bintree</h1>
+                    <h1 class="description center-align post-title">DP</h1>
                 </div>
             </div>
         </div>
@@ -473,7 +473,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-13
+                    2021-05-21
                 </div>
                 
 
@@ -494,86 +494,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h1><hr>
-<h2 id="前序遍历"><a href="#前序遍历" class="headerlink" title="前序遍历"></a>前序遍历</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">let</span> n<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        n<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            n<span class="token operator">=</span>n<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            n<span class="token operator">=</span>n<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> n
-<span class="token punctuation">}</span>
-</code></pre>
-<hr>
-<h2 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">ldr</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">let</span> n<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            n<span class="token operator">=</span>n<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-        n<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            n<span class="token operator">=</span>n<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> n
-<span class="token punctuation">}</span>
-</code></pre>
-<hr>
-<h2 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">lrd</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">let</span> n<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            n<span class="token operator">=</span>n<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            n<span class="token operator">=</span>n<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token function">dlr</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-        n<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> n
-<span class="token punctuation">}</span>
-</code></pre>
-<hr>
-<h2 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">level</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">let</span> n<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-    <span class="token keyword">let</span> t<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-    t<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">let</span> tt<span class="token operator">=</span>t<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-        n<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>tt<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>tt<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            t<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>tt<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>tt<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            t<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>tt<span class="token punctuation">.</span>right<span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> n
-<span class="token punctuation">}</span>
-</code></pre>
-<hr>
-<h2 id="求二叉树深度"><a href="#求二叉树深度" class="headerlink" title="求二叉树深度"></a>求二叉树深度</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token number">0</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token operator">||</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">let</span> rl<span class="token operator">=</span>r<span class="token punctuation">.</span>left<span class="token operator">?</span><span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token number">0</span>
-        <span class="token keyword">let</span> rr<span class="token operator">=</span>r<span class="token punctuation">.</span>right<span class="token operator">?</span><span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token number">0</span>
-        <span class="token keyword">return</span> <span class="token number">1</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>rl<span class="token punctuation">,</span>rr<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token number">1</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> t
-<span class="token punctuation">}</span>
+                <h1 id="DP"><a href="#DP" class="headerlink" title="DP"></a>DP</h1><hr>
+<p>今天开始接触到动态规划算法，其实之前也零零散散的做过几道题，暴力通过之后看题解印着大大的四个字“动态规划”，但当时不求甚解，就没有去学习，今天遇到几个有意思的题目。</p>
+<h2 id="最大子序和"><a href="#最大子序和" class="headerlink" title="最大子序和"></a>最大子序和</h2><p>其实可以把这个序列认为是连续的，，也可以认为是不连续的，题目规定是连续的，但其实将写法稍微改动一下，它就变成了不连续的，代码如下：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> maxSubArray <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> n<span class="token operator">=</span>nums<span class="token punctuation">.</span>length
+    <span class="token keyword">let</span> maxx<span class="token operator">=</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>pre<span class="token operator">=</span><span class="token number">0</span>
+    nums<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+        pre<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>pre<span class="token operator">+</span>x<span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//计算数组每一项为子序列最后一值的最大子序列</span>
+        maxx<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>maxx<span class="token punctuation">,</span>pre<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//优中选优</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> maxx
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 
                 
@@ -601,7 +533,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lfkls-23.github.io/2021/05/13/bintree/">https://lfkls-23.github.io/2021/05/13/bintree/</a>
+                    <a href="https://lfkls-23.github.io/2021/05/21/dp/">https://lfkls-23.github.io/2021/05/21/dp/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1078,9 +1010,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/05/21/dp/">
                     <div class="card-image">
@@ -1098,9 +1031,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1113,6 +1046,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1131,13 +1065,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/13/search/">
+                <a href="/2021/05/13/bintree/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Search">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Bintree">
                         
-                        <span class="card-title">Search</span>
+                        <span class="card-title">Bintree</span>
                     </div>
                 </a>
                 <div class="card-content article-content">

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>DP</title>
+      <link href="2021/05/21/dp/"/>
+      <url>2021/05/21/dp/</url>
+      
+        <content type="html"><![CDATA[<h1 id="DP"><a href="#DP" class="headerlink" title="DP"></a>DP</h1><hr><p>今天开始接触到动态规划算法，其实之前也零零散散的做过几道题，暴力通过之后看题解印着大大的四个字“动态规划”，但当时不求甚解，就没有去学习，今天遇到几个有意思的题目。</p><h2 id="最大子序和"><a href="#最大子序和" class="headerlink" title="最大子序和"></a>最大子序和</h2><p>其实可以把这个序列认为是连续的，，也可以认为是不连续的，题目规定是连续的，但其实将写法稍微改动一下，它就变成了不连续的，代码如下：</p><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> maxSubArray <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">let</span> n<span class="token operator">=</span>nums<span class="token punctuation">.</span>length    <span class="token keyword">let</span> maxx<span class="token operator">=</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>pre<span class="token operator">=</span><span class="token number">0</span>    nums<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>        pre<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>pre<span class="token operator">+</span>x<span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//计算数组每一项为子序列最后一值的最大子序列</span>        maxx<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>maxx<span class="token punctuation">,</span>pre<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//优中选优</span>    <span class="token punctuation">}</span><span class="token punctuation">)</span>    <span class="token keyword">return</span> maxx<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> algorithm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Bintree</title>
       <link href="2021/05/13/bintree/"/>
       <url>2021/05/13/bintree/</url>
